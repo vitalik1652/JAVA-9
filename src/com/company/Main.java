@@ -10,15 +10,15 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         Human me = new Human();
-        me.firstName = "Mateusz";
-        me.lastName = "Pawłowski";
+        me.firstName = "Vitalii";
+        me.lastName = "Sumka";
         me.pet = new Pet("Dog");
-        me.pet.name = "Haiko";
+        me.pet.name = "Emma";
         me.getLastSalaryCheckInfo();
         System.out.println("First salary check. Salary: " + me.getSalary());
         me.getLastSalaryCheckInfo();
         me.setSalary(3500.0);
-        me.setCar(new Car("Toyota", "C-HR"));
+        me.setCar(new Car("BMW", "3 series"));
         System.out.println(me.getCar().getProducer() + " " + me.getCar().getModel());
 
         me.pet.takeForAWalk();
@@ -29,8 +29,8 @@ public class Main {
         me.pet.takeForAWalk();
         me.pet.takeForAWalk();
 
-        Car car1 = new Car("Fiat", "126p");
-        Car car2 = new Car("Fiat", "126p");
+        Car car1 = new Car("Ford", "Mondeo");
+        Car car2 = new Car("Ford", "Mondeo");
         if (car1 == car2) {
             System.out.println("car1 i car2 są takie same");
         } else {
@@ -38,7 +38,7 @@ public class Main {
         }
         System.out.println(car1);
 
-        me.mobile = new Phone("Samsung", "Galaxy S20");
+        me.mobile = new Phone("Iphone", "8 plus");
 
         System.out.println(me);
         System.out.println(me.pet);
@@ -47,7 +47,7 @@ public class Main {
         System.out.println(me.mobile);
         me.mobile.turnOn();
 
-        Human czlowiek = new Human("Jan", "Kowalski");
+        Human czlowiek = new Human("Sergii", "Ostapchuck");
 
         System.out.println();
         me.getCar().sell(me, czlowiek, 100000.0);
